@@ -1,16 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { Greeting } from './Greeting'
+import { Card } from "./Card";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
 root.render(
   <>
-    <Greeting />
-    <Greeting />
-    <Greeting />
-    <Greeting />
+    <Card tittle="Hola NodeJS" />
+    <Card tittle="Hola Js" />
+    <Card tittle="Hola JSX" />
+    <Card tittle="Hola React" />
   </>
 );

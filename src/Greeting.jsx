@@ -21,3 +21,10 @@ export function Greeting() {
       </div>
     )
   }
+
+  export function UserCard(){
+    const user = 'Administrador'
+
+    return <label>{user}</label>
+
+  }
