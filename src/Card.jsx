@@ -3,7 +3,7 @@ export function Card(props) {
     <div>
       <hr />
       <h1>{props.name}</h1>
-      <br />
+      {/* <br />
       <h3>${props.amount}</h3>
       <br />
       <h1>{props.married ? "Casado" : "Soltero"}</h1>
@@ -12,7 +12,7 @@ export function Card(props) {
         <li>City: {props.address.city}</li>
         <li>Street: {props.address.street}</li>
       </ul>
-      <hr />
+      <hr /> */}
     </div>
   );
 }

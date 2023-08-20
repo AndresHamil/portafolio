@@ -1,5 +1,17 @@
-export function Button({tittle = "Boton"}){
+import PropTypes from 'prop-types';
+
+
+export function Button({tittle}){
     return (
         <button>{tittle}</button>
     )
+}
+
+
+Button.propTypes = {
+    tittle: PropTypes.string.isRequired
+}
+
+Button.defaultProps = {
+    tittle: 'Nombrame'
 }
