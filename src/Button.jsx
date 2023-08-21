@@ -1,26 +1,21 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
+
+export function Button({ tittle }) {
+  function getData() {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => response.json())
+      .then((data) => console.log(data));
 
 
-export function Button({tittle}){
+  }
 
-    function hola(){
-        alert("Hola")
-    }
-    
-    return (
-        <button onClick={hola}>
-            {tittle}
-        </button>
-    )
+  return <button onClick={getData}>{tittle}</button>;
 }
-
-
-
 
 Button.propTypes = {
-    tittle: PropTypes.string.isRequired
-}
+  tittle: PropTypes.string.isRequired,
+};
 
 Button.defaultProps = {
-    tittle: 'Boton'
-}
+  tittle: "Boton",
+};
