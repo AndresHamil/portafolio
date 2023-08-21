@@ -2,10 +2,19 @@ import PropTypes from 'prop-types';
 
 
 export function Button({tittle}){
+
+    function hola(){
+        alert("Hola")
+    }
+    
     return (
-        <button>{tittle}</button>
+        <button onClick={hola}>
+            {tittle}
+        </button>
     )
 }
+
+
 
 
 Button.propTypes = {
@@ -13,5 +22,5 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
-    tittle: 'Nombrame'
+    tittle: 'Boton'
 }
