@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { MdAccountCircle } from "react-icons/md";
 import "./post.css";
 
-export const Post = ({ title, body }) => {
+export const Post = ({ title, body, avatar }) => {
   return (
     <>
       <div className="box">

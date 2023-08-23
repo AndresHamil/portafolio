@@ -1,34 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 
 import { Post } from "./Post";
-import { Button } from "./Button";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const post = [
-  {
-    id: 1,
-    title: "Mi primera publicacion",
-    body: "Hola mundo como estan, este es mi primera vez pasando objetos a componenetes",
-  },
-  {
-    id: 2,
-    title: "Ahora tengo 2 publicaciones jaja",
-    body: "Hola mundo, he realizado mi segundo post.",
-  },
-  {
-    id: 3,
-    title: "Que son 2 sin un tercero?",
-    body: "Hola mundo, he realizado mi tercer post.",
-  },
-];
+function App() {
+  const [posts, setPosts] = useState(null);
+
+  function consultarPosts() {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => response.json())
+      .then((data) => setPosts(data))
+      .catch((error) => console.log(error));
+  }
+
+  return (
+    <>
+      <button onClick={consultarPosts}>Consultar publicaciones</button>
+      {posts && posts.map((post) => {
+        return <Post 
+                    key={post.id}
+                    title={post.title}
+                    body={post.body}
+                />
+      })}
+    </>
+  );
+}
+
 
 root.render(
   <>
-    <Button />
-    {post.map((post) => {
-      return <Post key={post.id} title={post.title} body={post.body} />;
-    })}
+    <App/>
   </>
 );
