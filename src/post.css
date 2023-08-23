@@ -16,9 +16,18 @@
     transform: scale(1.01);
 }
 
-.tittle{
+.header{
     padding: 20px;
-    font-size: 21px;    
+    font-size: 21px;   
+    display: flex;
+}
+
+.icon{
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(82, 82, 228);
 }
 
 .body{
