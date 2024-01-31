@@ -134,7 +134,6 @@
         text-align: center;
         color: #ffffff;
         margin: 0px 20px;
-        display: inline-block;
         gap: 20px;
 
         h1 {
@@ -162,4 +161,25 @@
             margin-bottom: 230px;
         }
     }
+}
+
+
+.divPadre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos cuando hay espacio */
+    background-color: lightgray;
+    width: 100%; /* o cualquier otra dimensión que prefieras */
+    // max-width: 600px; /* esto es solo para el ejemplo, puede ser cualquier tamaño o incluso omitido */
+    height: auto; /* o cualquier otra dimensión que prefieras */
+    margin: 0 auto;
+}
+
+.divHijo {
+    background-color: rgb(255, 255, 255);
+    min-width: 300px;
+    margin: 5px; 
+    height: 500px; /* o cualquier otra dimensión que prefieras */
+    transition: all 0.3s ease; /* Añade una transición suave a cualquier cambio */
+    will-change: transform; /* Optimiza para cambios de transformación */
 }
