@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.17e516ae.css","mappings":"AAAA,EACI,qBCAA,SACA,SDDA","sources":["components/header/styles.scss","assets/styles/base.scss"],"sourcesContent":["*{\r\n    background-color: red;\r\n}","*{\r\n    margin: 0;\r\n    padding: 0;\r\n}"],"names":[],"sourceRoot":""}
