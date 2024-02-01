@@ -1,0 +1,48 @@
+*{
+    background-color: #1C242D;
+}
+
+.titulo{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.panel{
+    height: calc(100vh - 500px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    
+    
+
+    .button{
+        display: inline-block;
+        height: 20px;
+        margin: 20px 30px;
+        padding: 10px 40px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+        user-select: none;
+
+    }
+
+    .si:active{
+        background-color: rgb(60, 152, 238);
+    }
+
+    .si{
+        background-color: rgba(60, 152, 238, 0.73);
+    }
+
+
+
+    .no{
+        background-color: rgb(201, 35, 35);
+    }
+}
