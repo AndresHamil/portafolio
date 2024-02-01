@@ -22,7 +22,7 @@ const getRandomInt = (min, max) => {
 const Index = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
       <div className="titulo">
       ¿Me das coquita?
