@@ -25,7 +25,7 @@ const Index = () => {
       <Header />
 
       <div className="titulo">
-        Hola
+      ¿Me das coquita?
       </div>
 
       <div className="panel">
