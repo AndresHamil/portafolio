@@ -11,11 +11,10 @@ const Header = () => {
                 <div className="and-header_content">
                     <div className="and-header_content_nav">
                         <ul>
+                            <li><NavLink to="/portafolio"><span>Inicio</span></NavLink></li>
                             <li><NavLink to="/portafolio"><span>Acerca</span></NavLink></li>
+                            <li><NavLink to="/portafolio"><span>Servicios</span></NavLink></li>
                             <li><NavLink to="/portafolio"><span>Habilidades</span></NavLink></li>
-                            <li><NavLink to="/portafolio"><span>Educacion</span></NavLink></li>
-                            <li><NavLink to="/portafolio"><span>Lenguajes</span></NavLink></li>
-                            <li><NavLink to="/portafolio"><span>Trayectoria</span></NavLink></li>
                             <li><NavLink to="/portafolio"><span>Contacto</span></NavLink></li>
                         </ul>
                     </div>

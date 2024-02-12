@@ -1,48 +1,57 @@
-*{
-    background-color: #1C242D;
+// *{
+//     // background-color: #1C242D;
+// }
+
+
+.dashboard {
+    position: relative;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.359)), url('../../assets/img/dashboard.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+
+    &_content_photo {
+        position: relative;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px;
+        z-index: 1;
+
+        &_box {
+            height: 30vh;
+            min-width: 150px;
+            min-height: 150px;
+            width: 30vh;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 6px solid rgba(208, 208, 208, 0.164);
+            opacity: 0;
+            animation: borderAnimation 1s ease forwards; /* Aplica la animación al borde */
+            user-select: none;
+            background-color: black;
+            transform: scale(.7);
+
+            > img {
+                
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    @keyframes borderAnimation {
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
 }
 
-.titulo{
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.panel{
-    height: calc(100vh - 500px);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-    
-    
-
-    .button{
-        display: inline-block;
-        height: 20px;
-        margin: 20px 30px;
-        padding: 10px 40px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.5s;
-        user-select: none;
-
-    }
-
-    .si:active{
-        background-color: rgb(60, 152, 238);
-    }
-
-    .si{
-        background-color: rgba(60, 152, 238, 0.73);
-    }
 
 
-
-    .no{
-        background-color: rgb(201, 35, 35);
-    }
-}
