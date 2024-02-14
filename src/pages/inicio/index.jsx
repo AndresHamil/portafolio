@@ -23,6 +23,12 @@ const Index = () => {
             {/* <img src={ImageninicioPerfil} alt="" /> */}
           </div>
         </div>
+
+        <div className="dashboard_content_text">
+          <label htmlFor="">Andres Rodriguez</label>
+          <br />
+          <span>Desarrollador full stack</span>
+        </div>
       </div>
     </>
   );
