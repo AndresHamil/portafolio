@@ -15,10 +15,12 @@ const Index = () => {
     }
 
     function handleOrientation(event) {
-      const beta = event.beta; 
+      let beta = event.beta; 
       // if (beta > 90) {
       //   alert('¡Giraste el celular hacia abajo!');
       // }
+
+      beta = Math.floor(beta); 
 
       setRote(beta)
     }
