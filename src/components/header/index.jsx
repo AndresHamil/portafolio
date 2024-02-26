@@ -1,9 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import MenuIcon from '@mui/icons-material/Menu';
+// import { makeStyles } from '@mui/styles';
+// import MenuIcon from './icons/menu.png';
+
 import './styles.scss';
 
-const Header = () => {
+
+
+const Header = ({ handleClick }) => {
 
     return (
         <>
@@ -17,10 +23,15 @@ const Header = () => {
                             <li><NavLink to="/portafolio"><span>Habilidades</span></NavLink></li>
                             <li><NavLink to="/portafolio"><span>Contacto</span></NavLink></li>
                         </ul>
+
+                     <MenuIcon className='icon-menu' onClick={() => {handleClick(true)}}/>
+
+
+                
                     </div>
                 </div>
                 <div className="and-header_menu">
-                    Hola
+                    {/* <MenuIcon/> */}
                 </div>
             </div>
         </>
