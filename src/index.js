@@ -9,11 +9,15 @@ import '@fontsource/roboto/700.css';
 
 import './assets/styles/base.scss'
 
+import { GlobalContextProvider } from './GlobalContextProvider';
+
 
 
 const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router />
+    <GlobalContextProvider>
+      <Router />
+    </GlobalContextProvider>
   </React.StrictMode>
 );
