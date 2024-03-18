@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portafolio/static/css/main.d2525380.css",
-    "main.js": "/portafolio/static/js/main.21d874e9.js",
+    "main.css": "/portafolio/static/css/main.18c19775.css",
+    "main.js": "/portafolio/static/js/main.dea198b3.js",
     "static/media/dashboard-1.webp": "/portafolio/static/media/dashboard-1.f660bc8cae8bc858bd30.webp",
     "static/media/whatsapp.png": "/portafolio/static/media/whatsapp.5fc400c4b153fc178ad7.png",
     "static/media/twitter.png": "/portafolio/static/media/twitter.c6e48e60f856cb822273.png",
@@ -64,11 +64,11 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/portafolio/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/portafolio/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/portafolio/index.html",
-    "main.d2525380.css.map": "/portafolio/static/css/main.d2525380.css.map",
-    "main.21d874e9.js.map": "/portafolio/static/js/main.21d874e9.js.map"
+    "main.18c19775.css.map": "/portafolio/static/css/main.18c19775.css.map",
+    "main.dea198b3.js.map": "/portafolio/static/js/main.dea198b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2525380.css",
-    "static/js/main.21d874e9.js"
+    "static/css/main.18c19775.css",
+    "static/js/main.dea198b3.js"
   ]
 }
