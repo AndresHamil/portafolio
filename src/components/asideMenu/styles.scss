@@ -1,0 +1,111 @@
+/* Minimalist menu styling with slide-in overlay */
+.wrap_menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #1A1B23;
+  color: #d0d2d6;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5);
+  will-change: transform;
+  z-index: 900;
+  pointer-events: none;
+}
+
+.wrap_menu.open {
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+
+/* header */
+.wrap_menu_header {
+  padding: 12px 20px;
+  display: flex;
+  justify-content: flex-end;
+  background: transparent;
+}
+
+.wrap_menu_header .material-symbols-outlined {
+  font-size: 24px;
+  color: #d0d2d6;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.wrap_menu_header .material-symbols-outlined:hover {
+  transform: scale(1.1);
+}
+
+.wrap_menu_header_icon img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  filter: invert(90%) brightness(1.15);
+  opacity: 1;
+}
+
+.wrap_menu_header_icon img:hover {
+  transform: scale(1.1);
+}
+
+.wrap_menu_items {
+  flex: 1;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.wrap_menu_items_item {
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.wrap_menu_items_item:hover,
+.wrap_menu_items_item.active {
+  color: #ffffff;
+}
+
+.wrap_menu_items_item.active::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 24px;
+  background: #f4594c;
+  border-radius: 2px;
+}
+
+.wrap_menu_social {
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.wrap_menu_social_box {
+  display: flex;
+  gap: 16px;
+}
+
+.wrap_menu_social_box > img {
+  width: 30px;
+  filter: invert(100%);
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.wrap_menu_social_box > img:hover {
+  opacity: 1;
+}

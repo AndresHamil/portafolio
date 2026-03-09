@@ -62,9 +62,16 @@
 
             .icon-menu{
                 display: none;
-                fill: rgba(230, 210, 210, 0.648);
-                transform: scale(1.5);
+                width: 28px;
+                height: 28px;
                 margin-right: 25px;
+                cursor: pointer;
+                transition: filter 0.2s;
+                filter: invert(90%) brightness(1.15);
+            }
+
+            .icon-menu:hover {
+                filter: invert(95%) brightness(1.25);
             }
 
             

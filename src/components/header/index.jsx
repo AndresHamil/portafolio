@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import MenuIcon from '@mui/icons-material/Menu';
+import menuIcon from './icons/menu.svg';
 import './styles.scss';
 
 import { useGlobalContextProvider } from './../../GlobalContextProvider';
@@ -26,10 +26,11 @@ const Header = () => {
                         </ul>
 
 
-                     <MenuIcon
+                     <img
+                        src={menuIcon}
+                        alt="Menu"
                         onClick={() => {setEstadoGlobal(true)}}
                         className='icon-menu'
-                        style={{ fill: estadoGlobal ? 'rgb(255, 255, 255)' : 'rgba(230, 210, 210, 0.648)' }}
                     />
 
 

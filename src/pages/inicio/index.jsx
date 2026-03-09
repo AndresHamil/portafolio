@@ -1,11 +1,7 @@
 import React from 'react';
 import Header from '../../components/header/index';
+import AsideMenu from '../../components/asideMenu/index';
 import './styles.scss';
-
-import  WhatsApp  from '../../assets/icons/whatsapp.png'
-import  linkedin  from '../../assets/icons/linkedin.png'
-import  twitter  from '../../assets/icons/twitter.png'
-import  github  from '../../assets/icons/github.png'
 
 
 
@@ -54,52 +50,7 @@ const Index = () => {
               Hola
             </div>
           </div>
-          {estadoGlobal && 
-            <div className="wrap_menu">
-
-              <div className="wrap_menu_header">
-                <div className="wrap_menu_header_icon">
-                  <span 
-                    class="material-symbols-outlined" 
-                    onClick={() => { setEstadoGlobal(!estadoGlobal); }}>
-                      close_small
-                  </span>
-                  
-                </div>
-                
-              </div>
-
-              <div className="wrap_menu_items">
-                <div className="wrap_menu_items_item">
-                  Inicio
-                </div>
-
-                <div className="wrap_menu_items_item">
-                  Acerca
-                </div>
-
-                <div className="wrap_menu_items_item">
-                  Servicios
-                </div>
-
-                <div className="wrap_menu_items_item active">
-                  Habilidades
-                </div>
-
-                <div className="wrap_menu_items_item ">
-                  Contacto
-                </div>
-              </div>
-              <div className="wrap_menu_social">
-                <div className="wrap_menu_social_box">
-                  <img src={WhatsApp} alt="" />
-                  <img src={linkedin} alt="" />
-                  <img src={twitter} alt="" />
-                  <img src={github} alt="" />
-                </div>
-              </div>
-            </div>
-          }
+          <AsideMenu />
         </div>
 
       
